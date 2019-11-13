@@ -39,3 +39,10 @@ if Media >= 7:
     print('Aprovado')
 else:
     print('Reprovado')
+
+
+ # lista = [Nota1, Nota2, Nota3, Nota4]
+ # print('A maior nota foi:', max(lista))
+
+ # lista = [Nota1, Nota2, Nota3, Nota4]
+ # print('A menor nota foi:', min(lista))
