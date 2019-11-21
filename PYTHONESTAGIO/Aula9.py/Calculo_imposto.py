@@ -5,7 +5,7 @@ print('='*50, '\n')
 
 salario = float(input('Digite seu salario:'))
 
-inss = calculo_inss(salario)
+inss = calculo_inss(sarlaio)
 irrf = calculo_irrf(salario, inss)
 
 salario_liquido = salario - inss - irrf
