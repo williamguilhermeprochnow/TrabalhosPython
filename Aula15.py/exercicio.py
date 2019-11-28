@@ -4,5 +4,5 @@
 # arquivo.write(f'Meu nome: {nome} {sobrenome}')
 # arquivo.close()
 
-arquivo = open('exercicio.txt','w')
-arquivo.write(f"{input('Digite seu nome:')}")
+# arquivo = open('exercicio.txt','w')
+# arquivo.write(f"{input('Digite seu nome:')}")
