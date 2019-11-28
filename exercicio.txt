@@ -1,0 +1,1 @@
+William& C:/Users/900168/AppData/Local/Programs/Python/Python37/python.exe c:/dados/GitHub/TrabalhosPython/Aula15.py/exercicio.py
