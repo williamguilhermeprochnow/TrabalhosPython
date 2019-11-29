@@ -1,0 +1,1 @@
+& C:/Users/900168/AppData/Local/Programs/Python/Python37/python.exe c:/dados/GitHub/TrabalhosPython/Aula16.py/faixa.py;ao vivo em belém;sla

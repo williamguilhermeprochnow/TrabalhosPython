@@ -1,0 +1,5 @@
+skol;skol;larger;7.0
+1;skol;larger;7.0
+5;sol;lager;7.0
+1;1;1;1.0
+1;1;1;1.0
