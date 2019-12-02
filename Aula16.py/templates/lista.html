@@ -7,6 +7,9 @@
     <title>{{nome}}</title>
 </head>
 <body>
-    
+    {% for faixa in lista %}
+        <span>{{faixa['musica']}} - {{faixa['album']}} - {{faixa['artista']}} </span><br>
+    {% endfor %}
+    <a href="/">Voltar</a>
 </body>
-</html>
+</html> 
