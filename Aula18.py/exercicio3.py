@@ -16,19 +16,19 @@ lista = [['frutas','verduras','legumes','preço'],
 
 print('1: imprima o valor do abacaxi')
 
-print(f'O preço do {lista[1][1]} é R${lista[4][0][0]}')
+print(f'O preço do {lista[1][1]} é R${lista[4][0][1]}')
 
 print('2: imprima o valor da rucula')
 
-print(f'O preço da {lista[2][2]} é R${lista[4][2][6]}')
+print(f'O preço da {lista[2][2]} é R${lista[4][1][2]}')
 
 print('3: imprima o valor da laranja')
 
-print(f'O preço da {lista[1][2]} é R${lista[4][1][3]}')
+print(f'O preço da {lista[1][2]} é R${lista[4][0][2]}')
 
 print('4: imprima o valor do repolho')
 
-print(f'O preço do {lista[2][4]} é R${lista[4][0][1]}')
+print(f'O preço do {lista[2][4]} é R${lista[4][1][4]}')
 
 print('5: imprima o valor do feijão')
 
@@ -36,15 +36,15 @@ print(f'O preço do {lista[3][0]} é R${lista[4][2][0]}')
 
 print('6: imprima o valor do feijão branco')
 
-print(f'O preço do {lista[3][4]} é R${lista[4][0][3]}')
+print(f'O preço do {lista[3][4]} é R${lista[4][2][4]}')
 
 print('7: imprima o valor da vergamota')
 
-print(f'O preço da {lista[1][6]} é R${lista[4][2][3]}')
+print(f'O preço da {lista[1][6]} é R${lista[4][0][6]}')
 
 print('8: imprima o valor da alface lisa')
 
-print(f'O preço da {lista[2][1]} é R${lista[4][0][5]}')
+print(f'O preço da {lista[2][1]} é R${lista[4][1][1]}')
 
 print('9: imprima o valor do mamão')
 
@@ -52,28 +52,28 @@ print(f'O preço da {lista[1][0]} é R${lista[4][1][2]}')
 
 print('10: imprima o valor da soja')
 
-print(f'O preço da {lista[3][6]} é R${lista[4][2][4]}')
+print(f'O preço da {lista[3][6]} é R${lista[4][2][6]}')
 
 print('11: imprima o valor da lentilha')
 
-print(f'O preço da {lista[3][2]} é R${lista[4][2][1]}')
+print(f'O preço da {lista[3][2]} é R${lista[4][2][2]}')
 
 print('12: imprima o valor da uva')
 
-print(f'O preço da {lista[1][3]} é R${lista[4][2][2]}')
+print(f'O preço da {lista[1][3]} é R${lista[4][0][3]}')
 
 print('13: imprima o valor da vagem')
 
-print(f'O preço da {lista[3][3]} é R${lista[4][0][0]}')
+print(f'O preço da {lista[3][3]} é R${lista[4][2][3]}')
 
 print('14: imprima o valor do almeirão')
 
-print(f'O preço da {lista[2][4]} é R${lista[4][0][4]}')
+print(f'O preço da {lista[2][4]} é R${lista[4][1][3]}')
 
 print('15: imprima o valor da ervilha')
 
-print(f'O preço da {lista[3][1]} é R${lista[4][0][5]}')
+print(f'O preço da {lista[3][1]} é R${lista[4][2][1]}')
 
 print('16: imprima o valor da maçã')
 
-print(f'O preço da {lista[1][5]} é R${lista[4][1][0]}')
+print(f'O preço da {lista[1][5]} é R${lista[4][0][5]}')
