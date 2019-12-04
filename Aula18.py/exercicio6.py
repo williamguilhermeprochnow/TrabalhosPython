@@ -59,17 +59,28 @@
 #>print(registros)
 ############################################################## Abioluz ##########################################################################
 
-def lista_festa(lista_de_entradas):
-    lista_homens
+def ler_cadastro():
+   arquivo = open('Aula18.py\\arquivo.txt','r')
+   lista = []
+   for pessoas in arquivo:
+      pessoas = pessoas.strip().split(';')
+      dicionario = {'codigo':pessoas[0], 'nome':pessoas[1], 
+                    'sexo':pessoas[2], 'idade':pessoas[3]}
+      lista.append(dicionario)
+   arquivo.close()
+   return lista
 
 def lista_festa(lista_de_entradas):
-    lista_homens = 
+    lista_homens = []
+    lista_mulheres = []
+
     for pessoa in lista_de_entradas:
         if int(pessoa['idade']) >= 18:
             if pessoa['sexo'] == 'f':
                 lista_mulheres.append(pessoa)
             else:
                 lista_homens.append(pessoa)
+    
     salvar(lista_homens,'homens')
     salvar(lista_mulheres,'mulheres')
 
@@ -81,7 +92,7 @@ def salvar(lista,nome):
     arquivo.close()
 
 def consulta(lista_consulta_funcao,numero):
-    for lista_consulta in lista_consulta_funcao
+    for lista_consulta in lista_consulta_funcao:
         if int(lista_consulta['idade']) >= 18:
             if lista_consulta['sexo'] == 'f':
                 print(f"Nome: {lista_consulta['nome']} Valor do ingresso: R$ 15,00")
@@ -90,9 +101,11 @@ def consulta(lista_consulta_funcao,numero):
         else:
             print('Não pode entrar!')
 
-lista = ler_cadastro()
+lista1 = ler_cadastro()
 lista_festa(lista1)
 
 while True:
     a = int(input('Digite um número: '))
     consulta(lista1,a)
+
+#####

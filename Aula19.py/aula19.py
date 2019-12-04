@@ -23,12 +23,15 @@ cadastroHBSIS = ['nome',   ['Alex'   ,'Paulo'  ,'Pedro'  ,'Mateus' ,'Carlos' ,'J
 
 
 for i in cadastroHBSIS:
-    print(f'{cadastroHBSIS[0]}: {cadastroHBSIS[1][1]}\n{cadastroHBSIS[2]}: {cadastroHBSIS[3][1]}\n{cadastroHBSIS[6]}: {cadastroHBSIS[7][1]}\n{cadastroHBSIS[4]}: {cadastroHBSIS[5][1]}')
-    print(f'{cadastroHBSIS[0]}: {cadastroHBSIS[1][2]}\n{cadastroHBSIS[2]}: {cadastroHBSIS[3][2]}\n{cadastroHBSIS[6]}: {cadastroHBSIS[7][2]}\n{cadastroHBSIS[4]}: {cadastroHBSIS[5][2]}')
-    print(f'{cadastroHBSIS[0]}: {cadastroHBSIS[1][3]}\n{cadastroHBSIS[2]}: {cadastroHBSIS[3][3]}\n{cadastroHBSIS[6]}: {cadastroHBSIS[7][3]}\n{cadastroHBSIS[4]}: {cadastroHBSIS[5][3]}')
-    print(f'{cadastroHBSIS[0]}: {cadastroHBSIS[1][3]}\n{cadastroHBSIS[2]}: {cadastroHBSIS[3][4]}\n{cadastroHBSIS[6]}: {cadastroHBSIS[7][4]}\n{cadastroHBSIS[4]}: {cadastroHBSIS[5][4]}')
-    print(f'{cadastroHBSIS[0]}: {cadastroHBSIS[1][5]}\n{cadastroHBSIS[2]}: {cadastroHBSIS[3][5]}\n{cadastroHBSIS[6]}: {cadastroHBSIS[7][5]}\n{cadastroHBSIS[4]}: {cadastroHBSIS[5][5]}')
+    print(f'{cadastroHBSIS[0]}: {cadastroHBSIS[1][1]}\n{cadastroHBSIS[2]}: {cadastroHBSIS[3][1]}\n{cadastroHBSIS[6]}: {cadastroHBSIS[7][1]}\n{cadastroHBSIS[4]}: {cadastroHBSIS[5][1]}\n')
+    print(f'{cadastroHBSIS[0]}: {cadastroHBSIS[1][2]}\n{cadastroHBSIS[2]}: {cadastroHBSIS[3][2]}\n{cadastroHBSIS[6]}: {cadastroHBSIS[7][2]}\n{cadastroHBSIS[4]}: {cadastroHBSIS[5][2]}\n')
+    print(f'{cadastroHBSIS[0]}: {cadastroHBSIS[1][3]}\n{cadastroHBSIS[2]}: {cadastroHBSIS[3][3]}\n{cadastroHBSIS[6]}: {cadastroHBSIS[7][3]}\n{cadastroHBSIS[4]}: {cadastroHBSIS[5][3]}\n')
+    print(f'{cadastroHBSIS[0]}: {cadastroHBSIS[1][3]}\n{cadastroHBSIS[2]}: {cadastroHBSIS[3][4]}\n{cadastroHBSIS[6]}: {cadastroHBSIS[7][4]}\n{cadastroHBSIS[4]}: {cadastroHBSIS[5][4]}\n')
+    print(f'{cadastroHBSIS[0]}: {cadastroHBSIS[1][5]}\n{cadastroHBSIS[2]}: {cadastroHBSIS[3][5]}\n{cadastroHBSIS[6]}: {cadastroHBSIS[7][5]}\n{cadastroHBSIS[4]}: {cadastroHBSIS[5][5]}\n')
     print(f'{cadastroHBSIS[0]}: {cadastroHBSIS[1][6]}\n{cadastroHBSIS[2]}: {cadastroHBSIS[3][6]}\n{cadastroHBSIS[6]}: {cadastroHBSIS[7][6]}\n{cadastroHBSIS[4]}: {cadastroHBSIS[5][6]}')
-    print(f'{cadastroHBSIS[0]}: {cadastroHBSIS[1][7]}\n{cadastroHBSIS[2]}: {cadastroHBSIS[3][7]}\n{cadastroHBSIS[6]}: {cadastroHBSIS[7][7]}\n{cadastroHBSIS[4]}: {cadastroHBSIS[5][7]}')
     break
-    
+
+
+# dados = []
+# dados.append
+# print(dados)

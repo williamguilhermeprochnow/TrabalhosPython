@@ -24,7 +24,7 @@ lista = [
           ['calça','camisa','japona','jaqueta','camiseta','bone','regata']
         ]
 
-def lista_itens(lista):
+def lista_iten(lista):
     contador = 0
 
     for lista_iten in lista:
@@ -33,4 +33,4 @@ def lista_itens(lista):
             print(item)
         contador = contador + 1
 
-lista_itens()
+lista_iten(lista)
