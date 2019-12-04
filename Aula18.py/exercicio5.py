@@ -24,10 +24,13 @@ lista = [
           ['calça','camisa','japona','jaqueta','camiseta','bone','regata']
         ]
 
-contador = 0
+def lista_itens(lista):
+    contador = 0
 
-for lista_itens in lista:
-    print(f'############# posição {contador} ##################')
-    for item in lista_itens:
-        print(item)
-    contador = contador + 1
+    for lista_iten in lista:
+        print(f'############# posição {contador} ##################')
+        for item in lista_iten:
+            print(item)
+        contador = contador + 1
+
+lista_itens()
