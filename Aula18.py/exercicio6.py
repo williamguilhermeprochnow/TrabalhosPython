@@ -107,5 +107,3 @@ lista_festa(lista1)
 while True:
     a = int(input('Digite um número: '))
     consulta(lista1,a)
-
-#####

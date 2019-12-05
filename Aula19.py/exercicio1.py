@@ -32,6 +32,9 @@ for i in cadastroHBSIS:
     break
 
 
-# dados = []
-# dados.append
-# print(dados)
+d1 = {(f'{cadastroHBSIS[0]}: {cadastroHBSIS[1][3]} - {cadastroHBSIS[2]}: {cadastroHBSIS[3][3]} - {cadastroHBSIS[6]}: {cadastroHBSIS[7][3]} - {cadastroHBSIS[4]}: {cadastroHBSIS[5][3]}')}
+d2 = {(f'{cadastroHBSIS[0]}: {cadastroHBSIS[1][1]} - {cadastroHBSIS[2]}: {cadastroHBSIS[3][1]} - {cadastroHBSIS[6]}: {cadastroHBSIS[7][1]} - {cadastroHBSIS[4]}: {cadastroHBSIS[5][1]}')}
+d3 = {(f'{cadastroHBSIS[0]}: {cadastroHBSIS[1][5]} - {cadastroHBSIS[2]}: {cadastroHBSIS[3][5]} - {cadastroHBSIS[6]}: {cadastroHBSIS[7][5]} - {cadastroHBSIS[4]}: {cadastroHBSIS[5][5]}')}
+
+lista_1 = [d1, d2, d3]
+print(lista_1)
