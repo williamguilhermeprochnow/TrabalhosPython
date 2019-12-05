@@ -63,7 +63,7 @@ def ler_cadastro():
    arquivo = open('Aula18.py\\arquivo.txt','r')
    lista = []
    for pessoas in arquivo:
-      pessoas = pessoas.strip().split(';')
+      pessoas = pessoas.strip().split(',')
       dicionario = {'codigo':pessoas[0], 'nome':pessoas[1], 
                     'sexo':pessoas[2], 'idade':pessoas[3]}
       lista.append(dicionario)
