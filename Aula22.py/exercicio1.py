@@ -16,14 +16,13 @@
 
 # 3) Atributos de estado: dinheiro na carteira, divida, bens
 
-class Empregado:
+class cliente:
     def __init__ (self,codigo1, cpf1, nome1, idade1, sexo1, compra1):
         self.codigo = codigo1
         self.cpf = cpf1
         self.nome = nome1
         self.idade = idade1
         self.sexo = sexo1
-        self.compra = compra1
         #
         self.salario = 2500
         self.bens = 0
@@ -37,26 +36,32 @@ class Empregado:
         if self.dinheiro_carteira == 0:
             self.dinheiro_carteira = salario
         else:
-            self.dinheiro_carteira += salario    
+            self.dinheiro_carteira += salario
 
-    def divida (self, divida = None):
-        if divida == None:
-            divida = self.divida
-        if self.divida == 0:
-            self.divida = dinheiro_carteira < compra
+    def comprar (self, compra = None):
+        if compra == None:
+            compra = self.compra
+        if self.dinheiro_carteira > compra:
+            self.divida = 'Inexistente'
         else:
-            self.divida == 0
-            
-
-cliente = Empregado(1,22222222, 'Wiliam', 17, 'm', 2500)
-cliente1 = Empregado(2,33333333, 'paulo', 18, 'm', 4000)
-
-print(cliente.nome)
-print(cliente.salario)
-print(cliente.compra)
-
-print(cliente1.nome)
-print(cliente1.salario)
-print(cliente1.compra)
+            self.divida = 'Existente'
 
 
+    # def set_divida (self, divida = None):
+    #     if divida == None:
+    #         divida = self.divida
+    #     if self.divida == 0:
+    #         self.divida = dinheiro_carteira < self.compra
+    #     else:
+    #         self.divida == 0
+
+# cliente = Empregado(1,22222222, 'Wiliam', 17, 'm', 2500 )
+# cliente1 = Empregado(2,33333333, 'paulo', 18, 'm', 4000)
+
+# print(cliente.nome)
+# print(cliente.salario)
+# print(cliente.compra)
+
+# print(cliente1.nome)
+# print(cliente1.salario)
+# print(cliente1.compra)
