@@ -19,52 +19,93 @@ dadobruto = '1;Arnaldo;23;m;alexcabeludo2@hotmail.com;014908648117'
 # nome, idade (inteiro), sexo, email, telefone). Este metodo deverá alterar tambem o dado bruto para
 # que na hora de salvar o dado num arquivo, o mesmo não estaja desatualizado.
 
-class Cliente ():
-    def __init__ (self, dadobruto):
+dadobruto = '1;Arnaldo;23;m;alexcabeludo2@hotmail.com;014908648117'
+
+class Cliente:
+    def __init__ (self,dadobruto):
         self.dado_bruto = dadobruto
-        self.codigo_cliente = None
+        self.codigo = None
         self.nome = None
         self.idade = None
         self.sexo = None
         self.email = None
         self.telefone = None
-    
-    def valor_bruto (self):
-        Cliente = self.dado_bruto.strip().split(';')
-        self.codigo_cliente = int( Cliente[0] )
-        self.nome = Cliente[1]
-        self.idade = int( Cliente[2] )
-        self.sexo = Cliente[3]
-        self.email = Cliente[4]
-        self.telefone = Cliente[5]
-    
-    def salvar (self):
-        arquivo = open('Aula22.py/arquivo.txt','a')
-        arquivo.write(f'{self.codigo_cliente};{self.nome};{self.idade};{self.sexo};{self.email};{self.telefone}')
-        arquivo.close()
-    
-    def modificar_dados (self):
-        self.cadastro = []
-        arquivo = open('Aula22.py/cadastro2.txt','r')
-        for linha in arquivo:
-            linha_separada = inha.strip().split(';')
-            dic = {
-                'codigo':linha_separada[0],
-                'nome':linha_separada[1],
-                'idade':linha_separada[2],
-                'sexo':linha_separada[3],
-                'email':linha_separada[4],
-                'telefone':linha_separada[5],
-            }
-            self.cadastro.append(dic)
+
+    def tratamento(self):
+        dados = self.dado_bruto
+        dados = dados.strip()
+        dados = dados.split(';')
+        self.codigo = int(dados[0])
+        self.nome = dados[1]
+        self.idade = int(dados[2])
+        self.sexo = dados[3]
+        self.email = dados[4]
+        self.telefone = dados[5]
+
+    def salvar(self,nome,atributo='a'):
+        arquivo = open(f'Aula22.py/{nome}.txt',atributo)
+        #texto = 
+        texto = f'{self.dado_bruto}\n'
+        arquivo.write(texto)
         arquivo.close()
 
+    #ou....
+    # def salvar(self,nome,atributo):
+    #     if atributo == 'a':
+    #         arquivo = open(f'23-Aula23/exercicios/resolucao/{nome}.txt',atributo)
+    #         #texto = 
+    #         texto = f'{self.dado_bruto}\n'
+    #         arquivo.write(texto)
+    #         arquivo.close()
+    #     elif atributo == 'r':
+    #         ''' perde o sentido do nome salvar.... mas como exemplo vale :-)
+    #         '''
+    #         arquivo = open(f'23-Aula23/exercicios/resolucao/{nome}.txt',atributo)
+    #         for dados in arquivo:
+    #             dados = dados.strip().split(';')
+    #             self.codigo = int(dados[0])
+    #             self.nome = dados[1]
+    #             self.idade = int(dados[2])
+    #             self.sexo = dados[3]
+    #             self.email = dados[4]
+    #             self.telefone = dados[5]
+    #         arquivo.close()
+    #     elif atributo == 'w':
+    #         arquivo = open(f'23-Aula23/exercicios/resolucao/{nome}.txt',atributo)
+    #         #texto = 
+    #         texto = f'{self.dado_bruto}\n'
+    #         arquivo.write(texto)
+    #         arquivo.close()
 
 
-pess = Cliente(dadobruto)
-pess.valor_bruto()
-pess.salvar()
-pess.modificar_dados()
-print(f'codigo cliente: {pess.codigo_cliente+1}\nNome: {pess.nome}')
-cad = Cliente()
-print(cad.cadastro)
+    
+    def atualizar(self):
+        # self.codigo = int(input('Digi')) CODIGO NÃO!
+        self.nome = input('Digite o novo nome do cliente: ')
+        self.idade = int(input('Digite a nova idade do cliente: '))
+        self.sexo = input('Digite o sexo do cliente: ')
+        self.email = input('digite o email do cliente: ')
+        self.telefone = input('Digite o telefone: ')       
+        self.dado_bruto = f'{self.codigo};{self.nome};{self.idade};{self.sexo};{self.email};{self.telefone}'
+        self.salvar("arquivo_novo",'w')
+
+pessoa = Cliente(dadobruto)
+
+pessoa.tratamento()
+pessoa.salvar('salvarcliente')
+
+print(f'Codigo: {pessoa.codigo}')
+print(f'Nome: {pessoa.nome}')
+print(f'Idade: {pessoa.idade}')
+print(f'Sexo: {pessoa.sexo}')
+print(f'Email: {pessoa.email}')
+print(f'Telefone: {pessoa.telefone}')
+
+pessoa.atualizar()
+
+print(f'Codigo: {pessoa.codigo}')
+print(f'Nome: {pessoa.nome}')
+print(f'Idade: {pessoa.idade}')
+print(f'Sexo: {pessoa.sexo}')
+print(f'Email: {pessoa.email}')
+print(f'Telefone: {pessoa.telefone}')

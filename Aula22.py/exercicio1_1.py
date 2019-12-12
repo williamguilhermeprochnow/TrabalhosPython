@@ -36,4 +36,4 @@ class Cliente ():
 pess = Cliente(dadobruto)
 pess.valor_bruto()
 
-print(f'codigo cliente: {pess.codigo_cliente+1}\nNome: {pess.nome}')
+print(f'codigo cliente: {pess.codigo_cliente+1}\nNome: {pess.nome}\nIdade: {pess.idade}\nSexo: {pess.sexo}\nEmail: {pess.email}\nTelefone: {pess.telefone}')
