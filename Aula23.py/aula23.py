@@ -39,5 +39,3 @@ tupla = ('Text', 'texto de novo', 'textei', 'textamento')
 for isto in tupla:
     print(type(isto))
     print(isto)
-
-

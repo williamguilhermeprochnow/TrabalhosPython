@@ -28,9 +28,9 @@
 class Cadastro:
     def __init__(self):
         self.lista=[]
-        self.ler() # ler o arquivo e criar a lista com dicionario dos clientes. 
+        self.ler('cadastro2') # ler o arquivo e criar a lista com dicionario dos clientes. 
 
-    def ler(self):
+    def ler(self,nome):
         try:
 
             arquivo = open(f'Aula22.py/{nome}.txt','r')
