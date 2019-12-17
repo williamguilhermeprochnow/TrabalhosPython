@@ -50,23 +50,24 @@ lista3 = lista_simples_int(randint(5,70))
 #1
 print(f"Tamanho da lista1 é igual: {len(lista1)} valor/es")
 #2
-print(f'O maior valor da lista é igual: {max(lista2)}')
+print(f'O maior valor da lista2 é igual: {max(lista2)}')
 #3
 print(f'A soma entre esse dois número é igual: {max(lista2) + min(lista2)}')
 #4
 print(f'A média aritimética da lista1 é igual: {sum(lista1) / len(lista1)}')
-#4
-print(f'o resultado entra a soma da lista1 é igaual: {sum(lista1)} valor/es')
 #5
+print(f'o resultado entra a soma da lista1 é igaual: {sum(lista1)} valor/es')
+#
 print(f'o resultado entra a soma da lista2 é igaual: {sum(lista2)} valor/es')
-#6
+#
 print(f'o resultado entra a soma da lista3 é igaual: {sum(lista3)} valor/es')
 #
 print(f'o resultado entra a soma de todas as listas é igual: {sum(lista1) + sum(lista2) + sum(lista3)} valor/es\n')
-#7
+#6
 for i in lista1:
     print(f'{i}')
 print('\n')
+#7
 try:
     posicao = [5, 9, 10, 25]
     for ident in posicao:
