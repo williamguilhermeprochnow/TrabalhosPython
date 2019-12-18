@@ -53,14 +53,21 @@ texto = '''1;Arnaldo;23;m;alexcabeludo2@hotmail.com;014908648117
 46;Josie;32;m;marclei@pop.com.br;033972950508
 47;Thayná;42;m;caio167@hotmail.com;028984798536
 48;Paola;50;m;chel_bdl@hotmail.com;024966119466
-49;Silvio;45;m;laurim_crazyboy@hotmail.com;033986392040
+49;Silvio;45;m;laurim_crazyboy@-hotmail.com;033986392040
 50;Vanusa;23;m;aline_gatinha_13@yahoo.com.br;015938655596'''
 
 def receber (texto):
+    cadastro = texto.split('\n')
     lista = []
-    split.append('\n')
-    for 
+    for pessoa in cadastro:
+        # pessoa = '1;Arnaldo;23;m;alexcabeludo2@hotmail.com;014908648117'
+        lista_intermediaria = pessoa.split(';')
+        # lista_intemediaria = ['1','Arnaldo','23','m','alexcabeludo2@hotmail.com','014908648117']
+        dic = {'codigo':lista_intermediaria[0], 'nome':lista_intermediaria[1], 'idade':lista_intermediaria[2], 'sexo':lista_intermediaria[3], 'email':lista_intermediaria[4], 'telefone':lista_intermediaria[5]}
+        lista.append(dic)
+    return lista
 
+print(receber(texto))
 
 
 
