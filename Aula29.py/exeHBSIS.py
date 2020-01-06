@@ -25,13 +25,20 @@
 #Nenhuma das comissárias pode ficar sozinhas com o piloto
 #O presidiário não podera ficar sozinho com os tripulantes sem a presença de um policial no terminal e no avião
 
-tripulaçãoT = ['Piloto', 'Oficial1', 'Oficial2']
-tripulaçãoC = ['Chefe de serviço', 'Comissária1', 'Comissária2']
+# tripulaçãoT = ['Piloto', 'Oficial1', 'Oficial2']
+# tripulaçãoC = ['Chefe de serviço', 'Comissária1', 'Comissária2']
 
-Velocidade = int(input('A velocidade é igual a: '))
+# Velocidade = int(input('A velocidade é igual a: '))
 
-for i in Velocidade:
-    if Velocidade >= 1:
-        print('Horario de chegada: ')
-    else:
-        print('O Fortwo não está em operação')
+# for i in Velocidade:
+#     if Velocidade >= 1:
+#         print('Horario de chegada: ')
+#     else:
+#         print('O Fortwo não está em operação')
+
+
+passageiros = []
+
+def LevandoP:
+    RuntimeError
+    
