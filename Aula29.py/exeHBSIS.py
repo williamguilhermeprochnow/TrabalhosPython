@@ -39,6 +39,23 @@
 
 passageiros = []
 
-def LevandoP:
-    RuntimeError
+def LevandoP (piloto, passageiro):
+    print(f'Os passageiros do primeiro vôo são {piloto}, {passageiro}')
+    print('Chegaram ao destino')
+    passageiros.append(passageiro)
+    print(f'Voltou somente o {piloto}')
+
+def embarques (Viagens, passageiro1):
+    print(f'Os passageiros do segundo vôo são {Viagens} e {passageiro1}')
+    passageiros.append(Viagens)
+    passageiros.append(passageiro1)
     
+pv = LevandoP('Piloto', 'Oficial')
+sv = LevandoP('piloto', 'Oficial')
+tv = LevandoP('Chefe', 'Piloto')
+ql = LevandoP('Chefe', 'Comissária1')
+quintal = LevandoP('Chefe', 'Comissária2')
+sl = LevandoP('Policial', 'Chefe')
+setimel = embarques('Policial', 'Presidiário')
+
+print(passageiros)
