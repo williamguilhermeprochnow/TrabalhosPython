@@ -1,3 +1,5 @@
+#--- Dias 06 e 07/01/2020
+
 # A HBSIS Airlines é uma empresa de aviação que opera rotas internacionais a partir de Blumenau.
 # Cada voo é tripulado por seis elementos, sendo que estes se dividem em dois grupos: a tripulação
 # técnica e a tripulação de cabine. A tripulação técnica é constituída pelo piloto e dois oficiais. 
@@ -23,27 +25,116 @@
 #Só o piloto, Chefe e o Policial podem dirigir o veículo (Fortwo)
 #Nenhum dos oficiais pode ficar sozinho com o chefe
 #Nenhuma das comissárias pode ficar sozinhas com o piloto
-#O presidiário não podera ficar sozinho com os tripulantes sem a presença de um policial no terminal e no avião
+#O presidiário não podera ficar sozinho com os tripulantes sem a presença de um policial, no terminal e no avião
 
-passageiros = []
+el1='Piloto'
+el2='Oficial 1'
+el3='Oficial 2'
+el4='chefe de serviço de voo'
+el5='comissária 1'
+el6='comissária 2'
+el7='Bandido'
+el8='Policial'
+carro = []
+aviao = []
+terminal = [el1,el2,el3,el4,el5,el6,el7,el8]
+numero_viagem=0
+def viagem_fortwo():
+    global numero_viagem
+    numero_viagem += 1
+    print(f'\n========== Viagem {numero_viagem} ==========')
+    print(f'Estão no terminal: {terminal}')
+def embarque(mot, pas):
+    terminal.remove(mot)
+    terminal.remove(pas)    
+    carro.append(mot)
+    carro.append(pas)
+    print(f'A {mot} e o {pas} embarcaram no Fortwo e vão até o avião')
+    print(f'A {pas} desce do Fortwo e embarca no avião ')
+    carro.remove(pas)
+    aviao.append(pas)
+    print(f'O {mot} volta no Fortwo para o terminal')
+    terminal.append(mot)   
+def embarques(mot,pas):
+    terminal.remove(mot)
+    terminal.remove(pas)
+    carro.append(mot)
+    carro.append(pas)
+    print(f'O {mot} e o {pas} entram no fortwo e vão até o avião')
+    carro.remove(mot)
+    carro.remove(pas)
+    aviao.append(mot)
+    aviao.append(pas)
+    print(f'O {mot} e o {pas} saem do fortwo e entram no avião')
+for viagem in range(1,8):
+    if viagem == 1:
+        viagem_fortwo()
+        embarque(el4, el5)
+        print(f'Estão no avião: {aviao}')
+    elif viagem == 2:
+        viagem_fortwo()
+        embarque(el4,el6)
+        print(f'Estão no avião: {aviao}')
+    elif viagem == 3:
+        viagem_fortwo()
+        embarque(el1,el2)
+        print(f'Estão no avião: {aviao}')
+    elif viagem == 4:
+        viagem_fortwo()
+        embarque(el1,el3)
+        print(f'Estão no avião: {aviao}')
+    elif viagem == 5:
+        viagem_fortwo()
+        embarque(el1,el4)
+        print(f'Estão no avião: {aviao}')
+    elif viagem == 6:
+        viagem_fortwo()
+        embarque(el8,el1)
+        print(f'Estão no avião: {aviao}')
+    elif viagem == 7:
+        viagem_fortwo()
+        embarques(el7,el8)
+        print(f'Estão no avião: {aviao}')
 
-def LevandoP (piloto, passageiro):
-    print(f'Os passageiros do primeiro vôo são {piloto}, {passageiro}')
-    print('Chegaram ao destino')
-    passageiros.append(passageiro)
-    print(f'Voltou somente o {piloto}')
+#######################################     PRIMEIRA VERSÃO FEITA E ESTRAGADA PELO EXERCÍCIO SEGUINTE       ######################################
 
-def embarques (Viagens, passageiro1):
-    print(f'Os passageiros do segundo vôo são {Viagens} e {passageiro1}')
-    passageiros.append(Viagens)
-    passageiros.append(passageiro1)
-    
-pv = LevandoP('Piloto', 'Oficial')
-sv = LevandoP('piloto', 'Oficial')
-tv = LevandoP('Chefe', 'Piloto')
-ql = LevandoP('Chefe', 'Comissária1')
-quintal = LevandoP('Chefe', 'Comissária2')
-sl = LevandoP('Policial', 'Chefe')
-setimel = embarques('Policial', 'Presidiário')
+# passageiros = []
+# aguardando = []
 
-print(passageiros)
+# def LevandoP (motorista1, motorista2):
+#     print(f'Fortwo está com {motorista1} e {motorista2}')
+#     print(f'Desembarca {motorista2}')
+#     aguardando.append(motorista2)
+#     print(f'Volta {motorista1}')
+
+# def embarques (motorista, passageiro):
+#     passageiros.append(passageiro)
+#     print(f'Fortwo está indo ao terminal com o {motorista} e {passageiro}')
+#     print(f'Chegou ao terminal e desembarcou somente o {passageiro}')
+#     print(f"As pessoas que ja estão no terminal {', '.join(passageiros)}")
+#     print(f'Fortwo esta voltando com {motorista} \n')
+
+# def passageiromotorista(motorista, passageiro):
+#     passageiros.append(passageiro)
+#     passageiros.append(motorista)
+#     print(f'Fortwo está indo ao terminal com o {motorista} e o {passageiro}')
+#     print(f'Fortwo chegou ao terminal')
+#     print(f"Pessoas que estão no terminal: {', '.join(passageiros)}")
+
+#     bool (aguardando)
+#     if aguardando:
+#         print(f"Voltando o {', '.join(aguardando)}")
+#         aguardando.pop()
+#     else:
+#         print(f'\nFortwo chegou ao destino.\n\nTodos os passageiros estão no aguarde para partir:')
+
+
+# pv = LevandoP('Chefe', 'Piloto')
+# sv = passageiromotorista('policial', 'Presidiário')
+# tv = embarques('Piloto', 'Oficial1')
+# ql = embarques('Piloto', 'Oficial2')
+# quintal = embarques('Chefe', 'Comissária1')
+# sl = embarques('Chefe', 'Comissária2')
+# setimal = passageiromotorista('Piloto', 'Chefe')
+
+# print(f"Todos os passageiros - {', '.join(passageiros)}")
