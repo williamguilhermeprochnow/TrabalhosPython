@@ -39,11 +39,23 @@ carro = []
 aviao = []
 terminal = [el1,el2,el3,el4,el5,el6,el7,el8]
 numero_viagem=0
+
+def ler_lista():
+    arquivo = open('TrabalhosPython/Aula29.py/listas.txt','r')
+    lista = []
+    for ler in arquivo:
+        linha = ler.strip().split(',')
+        dici = {'Função':linha[0:]}
+        lista.append(dici)
+        arquivo.close()
+        return lista
+print(ler_lista())
+
 def viagem_fortwo():
     global numero_viagem
     numero_viagem += 1
     print(f'\n========== Viagem {numero_viagem} ==========')
-    print(f'Estão no terminal: {terminal}')
+    print(f'Estão no terminal: {", ".join(terminal)}')
 def embarque(mot, pas):
     terminal.remove(mot)
     terminal.remove(pas)    
@@ -70,31 +82,33 @@ for viagem in range(1,8):
     if viagem == 1:
         viagem_fortwo()
         embarque(el4, el5)
-        print(f'Estão no avião: {aviao}')
+        print(f'Estão no avião: {", ".join(aviao)}')
     elif viagem == 2:
         viagem_fortwo()
         embarque(el4,el6)
-        print(f'Estão no avião: {aviao}')
+        print(f'Estão no avião: {", ".join(aviao)}')
     elif viagem == 3:
         viagem_fortwo()
         embarque(el1,el2)
-        print(f'Estão no avião: {aviao}')
+        print(f'Estão no avião: {", ".join(aviao)}')
     elif viagem == 4:
         viagem_fortwo()
         embarque(el1,el3)
-        print(f'Estão no avião: {aviao}')
+        print(f'Estão no avião: {", ".join(aviao)}')
     elif viagem == 5:
         viagem_fortwo()
         embarque(el1,el4)
-        print(f'Estão no avião: {aviao}')
+        print(f'Estão no avião: {", ".join(aviao)}')
     elif viagem == 6:
         viagem_fortwo()
         embarque(el8,el1)
-        print(f'Estão no avião: {aviao}')
+        print(f'Estão no avião: {", ".join(aviao)}')
     elif viagem == 7:
         viagem_fortwo()
         embarques(el7,el8)
-        print(f'Estão no avião: {aviao}')
+        print(f'Estão no avião: {", ".join(aviao)}\n')
+
+print(f'Já foram de avião os passageiros: {", ".join(aviao)}')
 
 #######################################     PRIMEIRA VERSÃO FEITA E ESTRAGADA PELO EXERCÍCIO SEGUINTE       ######################################
 
