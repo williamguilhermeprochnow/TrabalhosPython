@@ -1,1 +1,8 @@
-[Piloto, Oficial1, Oficial2, Chefe, Comissaria1, Comissaria2, Presidiario, Policial]
+Piloto
+Oficial1
+Oficial2
+Chefe
+Comissaria1
+Comissaria2
+Presidiario
+Policial

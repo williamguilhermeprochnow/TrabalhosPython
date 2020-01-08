@@ -44,11 +44,10 @@ def ler_lista():
     arquivo = open('TrabalhosPython/Aula29.py/listas.txt','r')
     lista = []
     for ler in arquivo:
-        linha = ler.strip().split(',')
-        dici = {'Função':linha[0:]}
-        lista.append(dici)
-        arquivo.close()
-        return lista
+        linha = ler.strip()
+        lista.append(linha)  
+    arquivo.close()
+    return lista
 print(ler_lista())
 
 def viagem_fortwo():
