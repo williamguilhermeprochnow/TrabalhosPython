@@ -1,5 +1,5 @@
 import sys
-sys.path.append('C:/Github/Trabalhos Python/TrabalhosPython/Aula35')
+sys.path.append('C:/Github/TrabalhosPython/Aula35')
 from Model.squad import Squad
 from DAO.squad_db import SquadDB
 

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Squads</title>
+    <link rel="stylesheet" href="../static/estilo.css">
+</head>
+<body>
+    <div class="container">
+        <a href="/" class="btn">Home</a>
+        <div class="display2">
+            <div class="tabela">
+                <table id='tabela-squads'>
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Descricao</th>
+                            <th>Numero de Pessoas</th>
+                            <th>Id linguagem BackEnd</th>
+                            <th>Nome linguagem BackEnd</th>
+                            <th>Id framework FrontEnd</th>
+                            <th>Nome framework FrontEnd</th>
+                            <th>Id SGBDS</th>
+                            <th>Nome SGBDS</th>
+                            <th>Configs</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for s in lista_squads%}
+                        <tr>
+                            <td>{{ s.nome }}</td>
+                            <td>{{ s.descricao }}</td>
+                            <td>{{ s.numeroPessoas }}</td>
+                            <td>{{ s.linguagemBackEnd.id }}</td>
+                            <td>{{ s.linguagemBackEnd.nome }}</td>
+                            <td>{{ s.frameworkFrontEnd.id }}</td>
+                            <td>{{ s.frameworkFrontEnd.nome }}</td>
+                            <td>{{ s.sgbds.id }}</td>
+                            <td>{{ s.sgbds.nome }}</td>
+                            <td>
+                                <a href="/cadastrar?id={{s.id}}" class="editar">Editar</a>
+                                <a href="/excluir?id={{ s.id }}" class="excluir">Excluir</a>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
