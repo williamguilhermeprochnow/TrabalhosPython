@@ -1,5 +1,5 @@
 import sys
-sys.path.append('C:/Github/TrabalhosPython/Aula38')
+sys.path.append('C:/Github/Trabalhos Python/TrabalhosPython/Aula36')
 from Model.sgbds import Sgbds
 from Model.linguagem_back_end import LinguagemBackEnd
 from Model.framework_front_end import FrameworkFrontEnd

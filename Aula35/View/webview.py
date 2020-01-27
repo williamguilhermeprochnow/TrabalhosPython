@@ -1,5 +1,5 @@
 import sys
-sys.path.append('C:/Github/TrabalhosPython/Aula35')
+sys.path.append('C:/Github/Trabalhos Python/TrabalhosPython/Aula35')
 from Controller.squad_controller import SquadController
 from flask import Flask, redirect, render_template, request
 from Model.squad import Squad

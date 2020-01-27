@@ -1,5 +1,5 @@
 import sys
-sys.path.append('C:/Github/TrabalhosPython/Aula38')
+sys.path.append('C:/Github/Trabalhos Python/TrabalhosPython/Aula36')
 from DAO.frontend_db import FrontendDB
 from Model.framework_front_end import FrameworkFrontEnd
 
