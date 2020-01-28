@@ -8,14 +8,15 @@
 <body>
     <div class="container">
         <a href="/" class="btn">Home</a>
-        <div class="display2">
+        <a href={{caminho}} class="btn">{{ nome_botao }}</a>
+        <div class="display">
             <div class="tabela">
                 <table id='tabela-squads'>
                     <thead>
                         <tr>
                             <th>ID</th>
                             <th>Nome</th>
-                            <td>configs</td>
+                            <th>configs</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -24,8 +25,8 @@
                             <td>{{ s.id }}</td>
                             <td>{{ s.nome }}</td>
                             <td>
-                                <a href="/cadastrar?id={{s.id}}" class="editar">Editar</a>
-                                <a href="/excluir?id={{ s.id }}" class="excluir">Excluir</a>
+                                <a href="{{link1}}?id={{s.id}}" class="editar">Editar</a>
+                                <a href="{{link2}}?id={{ s.id }}" class="excluir">Excluir</a>
                             </td>
                         </tr>
                         {% endfor %}
