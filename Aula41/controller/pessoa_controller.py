@@ -6,9 +6,10 @@ class PessoaController(Resource):
     def __init__(self):
         self.dao = PessoaDao()
 
-    def get (self):
-        msg = self.dao.list_all()
-        return msg
+    def get (self, id=None):
+        if id:
+            return self.dao.get_by_id(id)
+        return self.dao.list_all()
 
     def post (self):
         msg = self.dao.insert('')
@@ -18,6 +19,6 @@ class PessoaController(Resource):
         msg = self.dao.update('')
         return msg
 
-    def delete (self):
-        msg = self.dao.remove(10)
-        return msg
+    def delete (self, id):
+        return self.dao.remove(id)
+
