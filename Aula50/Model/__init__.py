@@ -1,0 +1,1 @@
+from .endereco_model import EnderecoModel

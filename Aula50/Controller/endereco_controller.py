@@ -27,7 +27,7 @@ class EnderecoController(Resource):
         logradouro = request.json['logradouro']
         numero = request.json['numero'] #pode ser com letras
         complemento = request.json['complemento']
-        endereco = EnderecoModel(logradouro, numero, complemento)
+        endereco = EnderecoModel(logradouro, numero, complemento, id)
         msg = self.dao.update(endereco)
         return msg
 

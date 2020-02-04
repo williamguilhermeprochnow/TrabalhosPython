@@ -1,6 +1,6 @@
 import MySQLdb
 
-from Aula50.Model.endereco_model import EnderecoModel
+from Aula50.Model import EnderecoModel
 
 class EnderecoDao:
     def __init__(self):
@@ -23,14 +23,14 @@ class EnderecoDao:
         return e.__dict__
 
     def insert(self, endereco:EnderecoModel):
-        self.cursor.execute("INSERT INTO endereço (LOGRADOURO , NUMERO, COMPLEMENTO) VALUES('{}','{}',{})".format(endereco.logradouro, endereco.numero, endereco.complemento))
+        self.cursor.execute("INSERT INTO endereço (Logradouro , Número, Complemento) VALUES('{}','{}','{}')".format(endereco.logradouro, endereco.numero, endereco.complemento))
         self.connection.commit()
         id = self.cursor.lastrowid
         endereco.id = id
         return endereco.__init__
 
     def update(self, endereco : EnderecoModel):
-        self.cursor.execute("UPDATE endereço SET LOGRADOURO = '{}', NUMERO = '{}', COMPEMENTO = '{}' WHERE ID = {}".format(endereco.logradouro, endereco.sobrenome, endereco.idade, endereco.id))
+        self.cursor.execute("UPDATE endereço SET Logradouro = '{}', Número = '{}', Complemento = '{}' WHERE ID = {}".format(endereco.logradouro, endereco.numero, endereco.complemento, endereco.id))
         self.connection.commit()
         return endereco.__dict__
 
