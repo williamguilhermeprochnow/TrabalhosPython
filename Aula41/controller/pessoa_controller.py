@@ -27,7 +27,7 @@ class PessoaController(Resource):
         nome = request.json['nome']
         sobrenome = request.json['sobrenome']
         idade = int(request.json['idade'])
-        pessoa = PessoaModel(nome, sobrenome, idade)
+        pessoa = PessoaModel(nome, sobrenome, idade, id)
         msg = self.dao.update(pessoa)
         return msg
 
