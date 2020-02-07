@@ -13,4 +13,4 @@ dao = PessoaDao()
 pessoa = dao.list_all()
 print(pessoa)
 for p in pessoa:
-    print(p)
+    print
