@@ -23,5 +23,5 @@ class Pessoa(Base):
             "nome" : self.nome,
             "sobrenome" : self.sobrenome,
             "dataNasc" : str(self.data_nascimento),
-            "naturalidade" : self.naturalidade
+            "naturalidade" : self.naturalidade0
         }
