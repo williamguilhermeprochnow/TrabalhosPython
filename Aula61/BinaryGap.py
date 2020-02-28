@@ -23,7 +23,6 @@
 
 # N = int(input('Digite o número: '))
 
-
 def convertendo(numero_natural):
     numero_natural_em_bin = bin(numero_natural)
     binario = numero_natural_em_bin[2:]
