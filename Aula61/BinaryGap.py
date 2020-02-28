@@ -24,30 +24,16 @@
 # N = int(input('Digite o número: '))
 
 
-def con(n):
-    # n = bin(N)
-    # n = '0b000000101001000100001'
-    lista = list(n)
-    lista.remove(lista[0])
-    lista.remove(lista[0])
-    print(lista)
-    contador = 0
-    ultimo = 0
-    maior = 0
-    for i in lista:
-        if i == '0' and ultimo == '0':
-            contador += 1
-        elif i == '0' and ultimo == '1':
-            contador =1
-        elif i != '0':
-            if contador > maior:
-                maior = contador
+def convertendo(numero_natural):
+    numero_natural_em_bin = bin(numero_natural)
+    binario = numero_natural_em_bin[2:]
+    return binario
 
-        ultimo = i
-    return maior
+def contando_os_espacos_binarios(binario):
+    lista_com_zeros = binario.split('1') # Lista só com zeros
+    max_zero_na_lista = len(max(lista_com_zeros))
+    menssagem = f'o maior intervalo binário de {binario} é {max_zero_na_lista}'
+    return print(menssagem)
 
-
-
-
-assert con('0b00000010100100010000100000') == 4 , f"erro: O resultado foi {con('0b00000010100100010000100000')} e deveria ser o número 4"
-print("O resultado foi perfeito")
+x = convertendo(2)
+contando_os_espacos_binarios(x)
