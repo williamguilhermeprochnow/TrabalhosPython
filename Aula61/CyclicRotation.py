@@ -43,8 +43,9 @@
 
 def girada():
     lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-    A = lista.pop()
-    lista.insert(0, A)
-    print(lista)
+    for i in lista:
+        A = lista.pop()
+        lista.insert(0, A)
+        print(lista)
 
 girada()
