@@ -40,12 +40,15 @@
 # a função deve retornar [1, 2, 3, 4]
 
 
+A = lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-def girada():
-    lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-    for i in lista:
-        A = lista.pop()
-        lista.insert(0, A)
-        print(lista)
+def solution(A : list, K):
+    if len(A) == 0:
+        return A
+    for i in range(0, K):
+        i = A.pop()
+        A.insert(0, i)
+        print(A)
+    return A
 
-girada()
+solution(A, 10)
