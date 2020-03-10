@@ -33,4 +33,4 @@ class TestApiCep(TestCase):
         self.assertEqual(resultado, 'Retono Api')
         mock_get_somente_numeros.assert_called_once_with('890-68.060')
         mock_get.assert_called_once_with()
-        retorno_api.jason.assert_called_once_with()
+        retorno_api.jason.assert_called_once_with('o erro do teste')
