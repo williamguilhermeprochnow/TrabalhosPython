@@ -21,25 +21,25 @@ class Funcionario(Pessoa):
         return self.__cargo
 
 
-f = Funcionario('', '', '', '', '', '')
-f.set_nome('William')
-f.set_sobrenome('Prochnow')
-f.set_cargo('Programador')
-f.set_idade(17)
-f.set_registro(123456)
-
-print(f.get_nome())
-print(f.get_sobrenome())
-print(f.get_cargo())
-print(f.get_idade())
-print(f.get_registro())
-
-
-# end = Endereco('', '', '')
-# end.set_rua('Gonçalvez')
-# end.set_complemento('Casa')
-# end.set_numero('200')
+# f = Funcionario('', '', '', '', '', '')
+# f.set_nome('William')
+# f.set_sobrenome('Prochnow')
+# f.set_cargo('Programador')
+# f.set_idade(17)
+# f.set_registro(123456)
 #
-# print(end.get_rua())
-# print(end.get_complemento())
-# print(end.get_numero())
+# print(f.get_nome())
+# print(f.get_sobrenome())
+# print(f.get_cargo())
+# print(f.get_idade())
+# print(f.get_registro())
+
+
+end = Endereco('', '', '')
+end.set_rua('Gonçalvez')
+end.set_complemento('Casa')
+end.set_numero('200')
+
+print(end.get_rua())
+print(end.get_complemento())
+print(end.get_numero())
